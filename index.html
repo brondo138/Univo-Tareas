@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 1</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<!--Parte 3 header-->
+<header>
+    <img class="logoUnivo" src="https://seeklogo.com/images/U/univo-logo-DA78C9A171-seeklogo.com.png" alt="logoUnivo" width="200px" height="200px">
+    <nav>
+        <ul>
+            <a href=""><u>Inicio</u></a>
+            <a href=""><u>Servicios</u></a>
+            <a href=""><u>Contacto</u> </a>
+        </ul>
+    </nav>
+</header>
+<body>
+    <p>
+        <!--Parte 1-->
+        "El precio del producto es &#36;50  y su tamaño es de 10cm. ¡Oferta especial hasta agotasr stock!"<br><br>
+        <!--Parte 2-->
+        <a href="https://www.youtube.com/" target="_blank">"Haz clic aquí para más información"</a><br><br>
+        <button onclick="saludo()">Saludo</button>
+    <script>
+        function saludo(){
+            alert('"Bienvenido al examen practico de HTML"')
+        }
+    </script>
+    <!--Parte 3 main-->
+    <main>
+        <section class="Primera Seccion">
+            <h2>Mision Univo</h2>
+            <article>
+                <p>
+                    Formar personas con altos niveles de competencia e innovación que los 
+                    convierta en agentes de cambio con sentido humano, comprometidos con el 
+                    desarrollo y sostenibilidad global
+                </p>
+                <img src="https://www.univo.edu.sv/wp-content/uploads/2023/07/1-4.jpg" alt="imagenCampus" width="200px" height="200px">
+            </article>
+        </section>
+        <section class="Segunda Seccion">
+            <ul>
+                <li>Ingenieria en Desarrollo de Software</li>
+                <li>Ingenieria Civil</li>
+                <li>Ingenieria Industrial</li>
+            </ul>
+        </section>
+        <aside>
+            <ol>
+                <li>Presta atención en clase</li>
+                <li>Descansa lo suficiente</li>
+                <li>Se responsable con tus deberes</li>
+            </ol>
+        </aside>
+
+        <!--Parte 4-->
+        <form>
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="1" max="120" required><br><br>
+
+        <label>Género:</label>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="otro" name="genero" value="Otro">
+        <label for="otro">Otro</label><br><br>
+        
+        <label for="intereses">Intereses:</label>
+        <select id="intereses" name="intereses">
+            <option value="ninguno">Ninguno</option>
+            <option value="tecnologia">Tecnología</option>
+            <option value="musica">Música</option>
+            <option value="deportes">Deportes</option>
+            <option value="lectura">Lectura</option>
+        </select><br><br>
+
+        <label for="boletin">Suscribirse al boletín de noticias:</label>
+        <input type="checkbox" id="boletin" name="boletin"><br><br>
+        
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios"></textarea><br><br>
+        
+        <label for="archivo">Subir archivo:</label>
+        <input type="file" id="archivo" name="archivo"><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+        </form>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright Universidad de Oriente Alex Francisco Lovos Argueta- 2024</p>
+    </footer>
+</body>
+</html>
