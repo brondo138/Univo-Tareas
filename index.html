@@ -20,19 +20,19 @@
 <body>
     <p>
         <!--Parte 1-->
-        "El precio del producto es &#36;50  y su tamaño es de 10cm. ¡Oferta especial hasta agotasr stock!"<br><br>
+        "El precio de la matricula es &#36;50. ¡Oferta especial por todo el mes de Agosto!"<br><br>
         <!--Parte 2-->
         <a href="https://www.youtube.com/" target="_blank">"Haz clic aquí para más información"</a><br><br>
         <button onclick="saludo()">Saludo</button>
     <script>
         function saludo(){
-            alert('"Bienvenido al examen practico de HTML"')
+            alert('"Bienvenido"')
         }
     </script>
     <!--Parte 3 main-->
     <main>
         <section class="Primera Seccion">
-            <h2>Mision Univo</h2>
+            <h1>Mision Univo</h1><hr>
             <article>
                 <p>
                     Formar personas con altos niveles de competencia e innovación que los 
@@ -43,12 +43,14 @@
             </article>
         </section>
         <section class="Segunda Seccion">
+            <h1>¡Oferta Academica!</h1><hr>
             <ul>
                 <li>Ingenieria en Desarrollo de Software</li>
                 <li>Ingenieria Civil</li>
                 <li>Ingenieria Industrial</li>
             </ul>
         </section>
+        <h3>Consejos estudiantiles</h3>
         <aside>
             <ol>
                 <li>Presta atención en clase</li>
@@ -58,6 +60,7 @@
         </aside>
 
         <!--Parte 4-->
+        <h1>¡Contactanos!</h1><hr>
         <form>
 
         <label for="nombre">Nombre completo:</label>
@@ -68,8 +71,8 @@
         <input type="email" id="email" name="email" required><br><br>
         
 
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" min="1" max="120" required><br><br>
+        <label for="Telefono">Telefono:</label>
+        <input type="tel" id="tel" name="tel"required><br><br>
 
         <label>Género:</label>
         <input type="radio" id="masculino" name="genero" value="Masculino">
@@ -78,20 +81,25 @@
         <label for="femenino">Femenino</label>
         <input type="radio" id="otro" name="genero" value="Otro">
         <label for="otro">Otro</label><br><br>
+
+        <label>Donde le gustaria ser contactado: </label>
+        <input type="radio" id="WhatsApp" name="contacto" value="WhatsApp" checked>
+        <label for="WhatsApp">WhatsApp</label>
+        <input type="radio" id="Correo" name="Correo" value="Correo">
+        <label for="Correo">Correo</label><br><br>
         
-        <label for="intereses">Intereses:</label>
+        <label for="intereses">Carrera Interesada:</label>
         <select id="intereses" name="intereses">
-            <option value="ninguno">Ninguno</option>
-            <option value="tecnologia">Tecnología</option>
-            <option value="musica">Música</option>
-            <option value="deportes">Deportes</option>
-            <option value="lectura">Lectura</option>
+            <option value="ninguno">Ninguna</option>
+            <option value="Ingenieria Software">Ingenieria en Desarrollo de Software</option>
+            <option value="Ingenieria Civil">Ingenieria Civil</option>
+            <option value="Ingenieria Industrial">Ingenieria Industrial</option>
         </select><br><br>
 
         <label for="boletin">Suscribirse al boletín de noticias:</label>
         <input type="checkbox" id="boletin" name="boletin"><br><br>
         
-        <label for="comentarios">Comentarios adicionales:</label><br>
+        <label for="comentarios">Porque quieres pertencer a nuestra familia UNIVO:</label><br>
         <textarea id="comentarios" name="comentarios"></textarea><br><br>
         
         <label for="archivo">Subir archivo:</label>
